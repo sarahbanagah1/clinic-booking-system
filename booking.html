@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>حجز موعد | عيادتي</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <a href="home.html" class="logo">
+                🏥 عيادتي
+            </a>
+
+            <div class="nav-links">
+
+                <a href="home.html">الرئيسية</a>
+
+                <a href="services.html">الخدمات</a>
+
+                <a href="booking.html">حجز موعد</a>
+
+                <a href="about.html">من نحن</a>
+
+                <a href="contact.html">تواصل معنا</a>
+
+                <a href="index.html" class="btn-login">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="booking-section">
+
+            <div class="container">
+
+                <div class="booking-container">
+
+                    <h1>
+                        حجز موعد
+                    </h1>
+
+                    <p>
+                        أدخل بياناتك واختر التخصص والموعد المناسب.
+                    </p>
+
+
+                    <form id="bookingForm">
+
+
+                        <div class="form-group">
+
+                            <label for="patientName">
+                                اسم المريض
+                            </label>
+
+                            <input
+                                type="text"
+                                id="patientName"
+                                name="patient_name"
+                                placeholder="أدخل اسم المريض"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                رقم الهاتف
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="أدخل رقم الهاتف"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                البريد الإلكتروني
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="أدخل البريد الإلكتروني"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                اختر التخصص
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                            >
+
+                                <option value="">
+                                    اختر التخصص
+                                </option>
+
+                                <option value="dentistry">
+                                    طب الأسنان
+                                </option>
+
+                                <option value="dermatology">
+                                    الجلدية
+                                </option>
+
+                                <option value="internal">
+                                    الباطنية
+                                </option>
+
+                                <option value="pediatrics">
+                                    طب الأطفال
+                                </option>
+
+                                <option value="orthodontics">
+                                    تقويم الأسنان
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="appointmentDate">
+                                تاريخ الموعد
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                name="appointment_date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="appointmentTime">
+                                وقت الموعد
+                            </label>
+
+                            <input
+                                type="time"
+                                id="appointmentTime"
+                                name="appointment_time"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="notes">
+                                ملاحظات
+                            </label>
+
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                rows="4"
+                                placeholder="اكتب أي ملاحظات إضافية"
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full">
+                            تأكيد الحجز
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+                              </html>

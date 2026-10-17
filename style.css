@@ -1,0 +1,443 @@
+/* =========================
+   إعدادات عامة
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   الأزرار
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #1976d2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #125ca8;
+}
+
+.btn-full {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+
+/* =========================
+   شريط التنقل Navbar
+========================= */
+
+.navbar {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #1976d2;
+}
+
+.nav-links .btn-login {
+    background-color: #1976d2;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   تسجيل الدخول وإنشاء الحساب
+========================= */
+
+.auth-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf4ff;
+}
+
+.auth-container {
+    width: 90%;
+    max-width: 450px;
+}
+
+.auth-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card .logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-footer a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   النماذج Forms
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+
+/* =========================
+   الصفحة الرئيسية
+========================= */
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #eaf4ff;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.features {
+    padding: 60px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   صفحة الخدمات
+========================= */
+
+.services-section {
+    padding: 60px 0;
+}
+
+.services-section h1,
+.services-section > .container > p {
+    text-align: center;
+}
+
+.services-section h1 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.services-section > .container > p {
+    margin-bottom: 35px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    font-size: 45px;
+}
+
+.service-card h3 {
+    color: #1976d2;
+    margin: 10px 0;
+}
+
+.service-card p {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   صفحة حجز الموعد
+========================= */
+
+.booking-section {
+    padding: 60px 0;
+}
+
+.booking-container {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.booking-container h1 {
+    color: #1976d2;
+    text-align: center;
+}
+
+.booking-container > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   صفحة من نحن
+========================= */
+
+.about-section {
+    padding: 60px 0;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.about-section > .container > p {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   صفحة تواصل معنا
+========================= */
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #1976d2;
+}
+
+.contact-section > .container > p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   الموبايل
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .features-grid,
+    .services-grid,
+    .about-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-card,
+    .booking-container {
+        padding: 22px;
+    }
+  }
